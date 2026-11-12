@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 360">
+<defs>
+<linearGradient id="k" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#9A7448"/><stop offset=".25" stop-color="#D9B98A"/><stop offset=".6" stop-color="#BF9A66"/><stop offset="1" stop-color="#86623A"/></linearGradient>
+<radialGradient id="w" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#1F7458"/><stop offset="1" stop-color="#072A20"/></radialGradient>
+</defs>
+<path d="M44 40L196 40L208 330Q208 350 188 350L52 350Q32 350 32 330Z" fill="url(#k)"/>
+<path d="M44 40L196 40L197 66L43 66Z" fill="#7A5A34"/>
+<rect x="44" y="50" width="152" height="2" fill="#5A4022"/>
+<circle cx="120" cy="52" r="6" fill="#3A2A14"/>
+<circle cx="120" cy="150" r="54" fill="url(#w)" stroke="#7A5A34" stroke-width="3"/>
+<path d="M92 170c-4-22 8-38 30-42-2 24-10 38-30 42z" fill="#3FA57E"/>
+<path d="M118 190c-8-18 0-36 20-46 6 22 0 38-20 46z" fill="#7CCBA6"/>
+<path d="M140 168c0-16 8-26 22-30 0 16-6 26-22 30z" fill="#2E8B67"/>
+<path d="M84 140c4-12 14-18 26-18-4 12-12 18-26 18z" fill="#7CCBA6" opacity=".8"/>
+<rect x="60" y="226" width="120" height="86" fill="#F5EFE3"/>
+<rect x="66" y="232" width="108" height="74" fill="none" stroke="#0E4A39" stroke-width="1.2"/>
+<text x="120" y="262" text-anchor="middle" font-family="Georgia,serif" font-size="14" letter-spacing="2" fill="#0E4A39">FEUILLES</text>
+<text x="120" y="278" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="7.5" letter-spacing="2" fill="#7A4426">SÉCHÉES · SÉNÉGAL</text>
+<text x="120" y="294" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="7" letter-spacing="2" fill="#655D52">ORIGINE · LOT</text>
+<path d="M52 70L64 70L58 340Q44 340 44 326Z" fill="#FFFFFF" opacity=".18"/>
+</svg>

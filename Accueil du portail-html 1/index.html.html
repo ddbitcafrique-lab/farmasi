@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Accueil — FarmasiSN et SenFarmasi</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./site.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap">
+<style>
+body{margin:0}
+.m-flacon{-webkit-mask:url(./img/flacon.svg) center/contain no-repeat;mask:url(./img/flacon.svg) center/contain no-repeat}
+.m-spiruline{-webkit-mask:url(./img/spiruline.svg) center/contain no-repeat;mask:url(./img/spiruline.svg) center/contain no-repeat}
+.m-huile{-webkit-mask:url(./img/huile.svg) center/contain no-repeat;mask:url(./img/huile.svg) center/contain no-repeat}
+.m-sachet{-webkit-mask:url(./img/sachet.svg) center/contain no-repeat;mask:url(./img/sachet.svg) center/contain no-repeat}
+</style>
+</helmet>
+<div class="site {{motionCls}}">
+
+<div class="curtain" aria-hidden="true"><span>Beauté &amp; Nature</span></div>
+
+<header class="hd">
+<a class="logo" href="Main.dc.html" aria-label="FarmasiSN et SenFarmasi, accueil"><span>Farmasi<b>SN</b></span><span class="lg-x"></span><span class="lg-s">Sen<b>Farmasi</b></span></a>
+<nav class="nav {{navCls}}" aria-label="Navigation principale">
+<a href="FarmasiSN.dc.html">FarmasiSN</a>
+<a href="SenFarmasi.dc.html">SenFarmasi</a>
+<a href="Distributeur.dc.html">Devenir distributeur</a>
+<a href="#blog">Blog</a>
+<a href="#contact">Contact</a>
+</nav>
+<button class="btn btn-or" onClick="{{openOrder}}">Commander</button>
+<button class="burger" aria-label="Ouvrir le menu" onClick="{{toggleNav}}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"></path></svg></button>
+</header>
+
+<main>
+<!-- PORTAIL : deux univers, une porte -->
+<section class="portal" onMouseMove="{{onMove}}">
+<div class="portal-copy">
+<span class="eye c-or fadein">Dakar · Sénégal · International</span>
+<h1><span class="line"><span>Le meilleur de la beauté</span></span><span class="line l2"><span>et de la <em class="c-or">nature</em>,</span></span><span class="line l3"><span>livré chez vous</span></span></h1>
+<p class="lead dim fadein" style="max-width: 54ch">FarmasiSN pour les produits Farmasi, SenFarmasi pour les plantes tropicales du Sénégal. Un message WhatsApp, et votre commande est lancée.</p>
+<div class="fadein f2" style="display: flex; gap: 14px; flex-wrap: wrap; justify-content: center">
+<button class="btn btn-or" onClick="{{openOrder}}">Commander maintenant</button>
+<a class="btn btn-ghost" href="#films">Voir les films produits</a>
+</div>
+</div>
+
+<a class="gate gate-f" href="FarmasiSN.dc.html">
+<span class="gate-word" aria-hidden="true">Beauté</span>
+<div class="gate-stage">
+<div class="halo"></div><div class="ring"></div>
+<div class="prod"><img src="./img/flacon.svg" alt="Flacon d’eau de parfum Farmasi Masculine"><div class="sheen m-flacon"></div></div>
+</div>
+<div class="gate-info">
+<span class="eye c-or">Univers 1</span>
+<strong>Farmasi<span class="c-or">SN</span></strong>
+<span class="dim">Parfums, soins et bien-être Farmasi</span>
+<span class="gate-go">Entrer <span aria-hidden="true">→</span></span>
+</div>
+</a>
+
+<a class="gate gate-s" href="SenFarmasi.dc.html">
+<span class="gate-word" aria-hidden="true">Terroir</span>
+<div class="gate-stage">
+<div class="halo"></div><div class="ring"></div>
+<div class="prod"><img src="./img/huile.svg" alt="Flacon d’huile végétale tropicale SenFarmasi"><div class="sheen m-huile"></div></div>
+</div>
+<div class="gate-info">
+<span class="eye c-or">Univers 2</span>
+<strong>Sen<span class="c-or">Farmasi</span></strong>
+<span class="dim">Huiles, feuilles, herbes et racines tropicales</span>
+<span class="gate-go">Entrer <span aria-hidden="true">→</span></span>
+</div>
+</a>
+<span class="scrollcue" aria-hidden="true"></span>
+</section>
+
+<!-- BANDEAU DE CONFIANCE -->
+<div class="mq" aria-label="Produits authentiques. Livraison Dakar, régions et international. Paiement Wave, Orange Money, carte ou à la livraison.">
+<div class="mq-t" aria-hidden="true"><span>Produits authentiques</span><i class="dm"></i><span>Livraison Dakar, régions et international</span><i class="dm"></i><span>Wave</span><i class="dm"></i><span>Orange Money</span><i class="dm"></i><span>Carte bancaire</span><i class="dm"></i><span>Paiement à la livraison</span><i class="dm"></i></div>
+<div class="mq-t" aria-hidden="true"><span>Produits authentiques</span><i class="dm"></i><span>Livraison Dakar, régions et international</span><i class="dm"></i><span>Wave</span><i class="dm"></i><span>Orange Money</span><i class="dm"></i><span>Carte bancaire</span><i class="dm"></i><span>Paiement à la livraison</span><i class="dm"></i></div>
+<div class="mq-t" aria-hidden="true"><span>Produits authentiques</span><i class="dm"></i><span>Livraison Dakar, régions et international</span><i class="dm"></i><span>Wave</span><i class="dm"></i><span>Orange Money</span><i class="dm"></i><span>Carte bancaire</span><i class="dm"></i><span>Paiement à la livraison</span><i class="dm"></i></div>
+</div>
+
+<!-- FILMS PRODUITS -->
+<section class="sec bg-noir" id="films">
+<div class="wrap films">
+<div class="rv-z">
+<sc-if value="{{f0}}" hint-placeholder-val="{{true}}">
+<div class="film {{pausedCls}}">
+<div class="cam"><div class="scene scene-noir">
+<div class="halo"></div><div class="ring"></div><div class="ring r2"></div>
+<div class="motes"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<div class="prod"><img src="./img/flacon.svg" alt="Farmasi Masculine, eau de parfum 100 ml"><div class="sheen m-flacon"></div></div>
+<div class="floor"></div>
+</div></div>
+<div class="film-top"><span>Film 01 — Farmasi Masculine</span><span class="rec">FarmasiSN</span></div>
+<div class="caps"><span>Un sillage affirmé</span><span>pour l’homme moderne</span><span>Eau de parfum, 100 ml</span></div>
+<div class="film-ctl"><button class="playbtn" aria-label="{{playLabel}}" onClick="{{togglePlay}}"><sc-if value="{{paused}}" hint-placeholder-val="{{false}}"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l14 8-14 8z"></path></svg></sc-if><sc-if value="{{playing}}" hint-placeholder-val="{{true}}"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4h4v16H6zM14 4h4v16h-4z"></path></svg></sc-if></button><div class="bar"><i onAnimationEnd="{{nextFilm}}"></i></div></div>
+</div>
+</sc-if>
+<sc-if value="{{f1}}" hint-placeholder-val="{{false}}">
+<div class="film {{pausedCls}}">
+<div class="cam"><div class="scene scene-rose">
+<div class="halo"></div><div class="ring"></div><div class="ring r2"></div>
+<div class="motes"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<div class="prod"><img src="./img/spiruline.svg" alt="Spiruline Nutriplus, boîte de 60 comprimés"><div class="sheen m-spiruline"></div></div>
+<div class="floor"></div>
+</div></div>
+<div class="film-top"><span>Film 02 — Spiruline Nutriplus</span><span class="rec">FarmasiSN</span></div>
+<div class="caps"><span>La spiruline, au quotidien</span><span>60 comprimés</span><span>Complément alimentaire</span></div>
+<div class="film-ctl"><button class="playbtn" aria-label="{{playLabel}}" onClick="{{togglePlay}}"><sc-if value="{{paused}}" hint-placeholder-val="{{false}}"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l14 8-14 8z"></path></svg></sc-if><sc-if value="{{playing}}" hint-placeholder-val="{{true}}"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4h4v16H6zM14 4h4v16h-4z"></path></svg></sc-if></button><div class="bar"><i onAnimationEnd="{{nextFilm}}"></i></div></div>
+</div>
+</sc-if>
+<sc-if value="{{f2}}" hint-placeholder-val="{{false}}">
+<div class="film {{pausedCls}}">
+<div class="cam"><div class="scene scene-em">
+<div class="halo"></div><div class="ring"></div><div class="ring r2"></div>
+<div class="motes leafs"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<div class="prod"><img src="./img/huile.svg" alt="Huile végétale tropicale SenFarmasi"><div class="sheen m-huile"></div></div>
+<div class="floor"></div>
+</div></div>
+<div class="film-top"><span>Film 03 — Huiles tropicales</span><span class="rec">SenFarmasi</span></div>
+<div class="caps"><span>Du terroir sénégalais</span><span>Origine et lot indiqués</span><span>À votre porte, et au-delà</span></div>
+<div class="film-ctl"><button class="playbtn" aria-label="{{playLabel}}" onClick="{{togglePlay}}"><sc-if value="{{paused}}" hint-placeholder-val="{{false}}"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l14 8-14 8z"></path></svg></sc-if><sc-if value="{{playing}}" hint-placeholder-val="{{true}}"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4h4v16H6zM14 4h4v16h-4z"></path></svg></sc-if></button><div class="bar"><i onAnimationEnd="{{nextFilm}}"></i></div></div>
+</div>
+</sc-if>
+</div>
+<div class="rv">
+<span class="eye c-or">Films produits</span>
+<h2 style="margin-top: 20px">Chaque produit a son <em class="c-or">film</em></h2>
+<p class="dim" style="margin-top: 18px; max-width: 44ch">Douze secondes pour sentir un produit avant de le commander : lumière, matière, promesse.</p>
+<div class="film-tabs">
+<sc-for list="{{tabs}}" as="t" hint-placeholder-count="3">
+<button class="film-tab {{t.cls}}" aria-pressed="{{t.on}}" onClick="{{t.pick}}"><span class="n">{{t.n}}</span><span class="t">{{t.title}}</span><span class="b c-or">{{t.brand}}</span></button>
+</sc-for>
+</div>
+</div>
+</div>
+</section>
+
+<!-- POURQUOI NOUS CHOISIR -->
+<section class="sec">
+<div class="wrap">
+<div class="headrow rv">
+<div><span class="eye c-ord">Nos engagements</span><h2 style="margin-top: 20px; max-width: 16ch">Pourquoi choisir FarmasiSN et SenFarmasi</h2></div>
+<p class="lead c-gris" style="max-width: 40ch">Deux marques, une même exigence : vous servir des produits vrais, avec un conseil humain.</p>
+</div>
+<div class="g3">
+<div class="why rv"><h3>Authenticité <em>garantie</em></h3><p class="c-gris">FarmasiSN est distributeur indépendant de produits Farmasi. Les plantes SenFarmasi portent leur origine et leur numéro de lot.</p></div>
+<div class="why rv"><h3>Conseil personnel sur <em>WhatsApp</em></h3><p class="c-gris">Une vraie personne vous répond, vous oriente vers le bon produit et suit votre commande jusqu’à la livraison.</p></div>
+<div class="why rv"><h3>Commande <em>sans effort</em></h3><p class="c-gris">Un message suffit. Payez par Wave, Orange Money, carte bancaire, ou à la livraison.</p></div>
+</div>
+</div>
+</section>
+
+<!-- UNIVERS FARMASISN -->
+<section class="sec bg-noir">
+<div class="wrap">
+<div class="headrow rv">
+<div><span class="eye c-or">FarmasiSN</span><h2 style="margin-top: 20px">Les produits <em class="c-or">Farmasi</em></h2></div>
+<a class="lk c-or" href="FarmasiSN.dc.html">Tout l’univers FarmasiSN <span aria-hidden="true">→</span></a>
+</div>
+<div class="g4">
+<a class="tile rv" href="FarmasiSN.dc.html"><div class="scene scene-noir"><div class="halo"></div><div class="prod"><img src="./img/flacon.svg" alt=""><div class="sheen m-flacon"></div></div></div><h3>Parfums</h3><small>Eaux de parfum homme et femme <b>Voir →</b></small></a>
+<a class="tile rv" href="FarmasiSN.dc.html"><div class="scene scene-rose"><div class="halo"></div><span class="tile-letter" aria-hidden="true">S</span></div><h3>Soins visage et corps</h3><small>Routines simples <b>Voir →</b></small></a>
+<a class="tile rv" href="FarmasiSN.dc.html"><div class="scene scene-rose"><div class="ring"></div><span class="tile-letter" aria-hidden="true">M</span></div><h3>Maquillage</h3><small>Teint, yeux, lèvres <b>Voir →</b></small></a>
+<a class="tile rv" href="FarmasiSN.dc.html"><div class="scene scene-noir"><div class="halo"></div><div class="prod"><img src="./img/spiruline.svg" alt=""><div class="sheen m-spiruline"></div></div></div><h3>Bien-être Nutriplus</h3><small>Compléments alimentaires <b>Voir →</b></small></a>
+</div>
+</div>
+</section>
+
+<!-- UNIVERS SENFARMASI -->
+<section class="sec bg-em">
+<div class="wrap">
+<div class="headrow rv">
+<div><span class="eye c-or">SenFarmasi</span><h2 style="margin-top: 20px">Les plantes tropicales du <em class="c-or">Sénégal</em></h2></div>
+<a class="lk c-or" href="SenFarmasi.dc.html">Tout l’univers SenFarmasi <span aria-hidden="true">→</span></a>
+</div>
+<div class="g4">
+<a class="tile rv" href="SenFarmasi.dc.html"><div class="scene scene-em"><div class="halo"></div><div class="prod"><img src="./img/huile.svg" alt=""><div class="sheen m-huile"></div></div></div><h3>Huiles</h3><small>Huiles végétales tropicales <b>Voir →</b></small></a>
+<a class="tile rv" href="SenFarmasi.dc.html"><div class="scene scene-em"><div class="halo"></div><div class="prod"><img src="./img/sachet.svg" alt=""><div class="sheen m-sachet"></div></div></div><h3>Feuilles</h3><small>Séchées, prêtes pour l’infusion <b>Voir →</b></small></a>
+<a class="tile rv" href="SenFarmasi.dc.html"><div class="scene scene-em"><div class="ring"></div><div class="motes leafs"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="tile-letter" aria-hidden="true">H</span></div><h3>Herbes</h3><small>Herbes séchées <b>Voir →</b></small></a>
+<a class="tile rv" href="SenFarmasi.dc.html"><div class="scene scene-terre"><div class="halo"></div><span class="tile-letter" aria-hidden="true">R</span></div><h3>Racines</h3><small>Sélectionnées et séchées <b>Voir →</b></small></a>
+</div>
+<div class="notice rv" style="margin-top: 44px; color: #E9D3A1">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5M12 16.5v.5"></path></svg>
+<p>Les usages traditionnels des plantes sont présentés à titre d’information, sans promesse thérapeutique. En cas de grossesse, de traitement ou de maladie, demandez l’avis d’un professionnel de santé.</p>
+</div>
+</div>
+</section>
+
+<!-- DEVENIR DISTRIBUTEUR -->
+<section class="sec bg-char">
+<div class="wrap">
+<div class="g2" style="align-items: end; margin-bottom: 64px">
+<div class="rv"><span class="eye c-or">Devenir distributeur</span><h2 style="margin-top: 20px">Vendez deux univers avec <em class="c-or">un seul compte</em></h2></div>
+<div class="rv" style="display: flex; flex-direction: column; gap: 22px; align-items: flex-start"><p class="lead dim">À votre rythme, sans stock obligatoire. Une boutique personnelle, des visuels prêts pour WhatsApp et une formation sur les deux gammes.</p><a class="btn btn-or" href="Distributeur.dc.html">Découvrir le programme</a></div>
+</div>
+<div class="steps">
+<div class="step rv"><p>Je m’inscris gratuitement.</p></div>
+<div class="step rv"><p>Je suis la formation de démarrage sur les deux gammes.</p></div>
+<div class="step rv"><p>Je partage ma boutique personnelle et je vends à mes clients.</p></div>
+<div class="step rv"><p>Je suis rémunéré sur mes ventes réelles.</p></div>
+</div>
+<p class="rv" style="margin-top: 48px; font-size: 14px; color: #E9D3A1; max-width: 80ch">Aucun revenu n’est garanti. Vos gains dépendent de vos ventes à de vrais clients. Aucun achat de stock n’est obligatoire pour progresser.</p>
+</div>
+</section>
+
+<!-- BLOG -->
+<section class="sec" id="blog">
+<div class="wrap">
+<div class="headrow rv">
+<div><span class="eye c-ord">Blog</span><h2 style="margin-top: 20px">Conseils beauté, bien-être et <em>plantes</em></h2></div>
+<span class="c-gris">Un nouvel article chaque semaine</span>
+</div>
+<div class="g3">
+<article class="why rv"><span class="brandtag c-ord">Beauté et parfums</span><h3>Comment choisir son parfum : notes, tenue, occasion</h3><a class="lk c-ord" href="#blog" style="align-self: flex-start">Lire <span aria-hidden="true">→</span></a></article>
+<article class="why rv"><span class="brandtag c-em">Plantes et traditions</span><h3>Les huiles végétales du Sénégal : origines et usages traditionnels</h3><a class="lk c-em" href="#blog" style="align-self: flex-start">Lire <span aria-hidden="true">→</span></a></article>
+<article class="why rv"><span class="brandtag c-terre">Bien-être et nutrition</span><h3>Spiruline : ce que dit l’étiquette Nutriplus et comment la consommer</h3><a class="lk c-terre" href="#blog" style="align-self: flex-start">Lire <span aria-hidden="true">→</span></a></article>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="sec bg-sable2">
+<div class="wrap g2">
+<div class="rv"><span class="eye c-ord">Aide</span><h2 style="margin-top: 20px">Questions <em>fréquentes</em></h2><p class="c-gris" style="margin-top: 18px; max-width: 36ch">Une autre question ? L’assistant et nos conseillers vous répondent sur WhatsApp.</p></div>
+<div class="faq rv">
+<details open=""><summary>Comment passer commande ?</summary><p class="ans">Choisissez votre univers, puis cliquez sur « Commander » : vous pouvez payer en ligne ou poursuivre sur WhatsApp au +221 77 173 02 71 avec un message déjà prêt.</p></details>
+<details><summary>Les produits Farmasi sont-ils authentiques ?</summary><p class="ans">Oui. FarmasiSN est distributeur indépendant de produits Farmasi.</p></details>
+<details><summary>Où livrez-vous ?</summary><p class="ans">À Dakar, en banlieue, dans les régions et à l’international. Les frais de livraison par zone sont affichés avant le paiement. <span class="ph">[TARIFS PAR ZONE À COMPLÉTER]</span></p></details>
+<details><summary>Quels moyens de paiement acceptez-vous ?</summary><p class="ans">Wave, Orange Money, carte bancaire et paiement à la livraison. L’export se règle sur devis.</p></details>
+<details><summary>Les plantes SenFarmasi remplacent-elles un traitement ?</summary><p class="ans">Non. Nous présentons des usages traditionnels, sans promesse thérapeutique. Pour toute question de santé, consultez un professionnel de santé.</p></details>
+<details><summary>Combien gagne un distributeur ?</summary><p class="ans">Aucun revenu n’est garanti. Les gains dépendent des ventes réalisées auprès de vrais clients ; aucun achat de stock n’est obligatoire.</p></details>
+</div>
+</div>
+</section>
+
+<!-- APPEL FINAL -->
+<section class="cta bg-noir" id="contact">
+<div class="wrap rv">
+<span class="eye c-or">Contact</span>
+<h2 style="margin-top: 24px">Prêt à commander ?<br><em class="c-or">Écrivez-nous.</em></h2>
+<div><a class="tel" href="https://wa.me/221771730271">+221 77 173 02 71</a></div>
+<div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap">
+<a class="btn btn-wa" href="{{waHello}}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20l1.4-4.2A8 8 0 1 1 8.6 19L4 20z"></path></svg>Écrire sur WhatsApp</a>
+<button class="btn btn-ghost" onClick="{{openOrder}}">Choisir mon univers</button>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="ft">
+<div class="wrap">
+<div class="ft-g">
+<div><a class="logo" href="Main.dc.html"><span>Farmasi<b>SN</b></span><span class="lg-x"></span><span class="lg-s">Sen<b>Farmasi</b></span></a><p style="margin-top: 16px; max-width: 34ch">Deux marques, un seul écosystème. FarmasiSN est distributeur indépendant de produits Farmasi.</p></div>
+<div><h4>Boutique</h4><a href="FarmasiSN.dc.html">Produits Farmasi</a><a href="SenFarmasi.dc.html">Plantes tropicales du Sénégal</a><a href="SenFarmasi.dc.html">Devis grossiste et export</a><a href="Distributeur.dc.html">Devenir distributeur</a></div>
+<div><h4>Informations</h4><a href="#contact">Contact</a><a href="#blog">Blog</a><a href="#contact">Aide : livraison, paiement, retours</a><a href="#contact">Conditions générales de vente</a><a href="#contact">Confidentialité</a></div>
+<div><h4>Paiement</h4><div class="pay"><span>Wave</span><span>Orange Money</span><span>Carte</span><span>À la livraison</span></div></div>
+</div>
+<div class="ft-l"><span>© 2026 ATHID GROUP SARL · Dakar, Sénégal</span><span>Mentions légales · Contrat de distributeur indépendant · Avertissement santé et gains</span></div>
+</div>
+</footer>
+
+<!-- BOUTONS FLOTTANTS -->
+<div class="fab">
+<sc-if value="{{bot}}" hint-placeholder-val="{{false}}">
+<div class="bot" role="dialog" aria-label="Assistant IA">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 10px"><strong class="serif" style="font-size: 20px">Assistant IA</strong><span class="brandtag c-ord" style="margin: 0">Démonstration</span></div>
+<p style="font-size: 12.5px; color: #655D52">Je suis une IA. Je ne donne ni conseil médical ni promesse de revenus ; les prix viennent toujours du catalogue.</p>
+<sc-if value="{{hasAnswer}}" hint-placeholder-val="{{false}}"><div class="bot-q">{{botQ}}</div><div class="bot-a">{{botA}}</div></sc-if>
+<sc-for list="{{chips}}" as="c" hint-placeholder-count="3"><button class="bot-c" onClick="{{c.ask}}">{{c.q}}</button></sc-for>
+<a class="btn btn-wa btn-full" href="{{waAdvisor}}">Parler à un conseiller</a>
+</div>
+</sc-if>
+<button class="fab-b fab-ai" aria-label="Ouvrir l’assistant IA" onClick="{{toggleBot}}"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7z"></path></svg></button>
+<a class="fab-b fab-wa" href="{{waHello}}" aria-label="Écrire sur WhatsApp"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20l1.4-4.2A8 8 0 1 1 8.6 19L4 20z"></path></svg></a>
+</div>
+
+<!-- FENÊTRE DE CHOIX « COMMANDER » -->
+<sc-if value="{{order}}" hint-placeholder-val="{{false}}">
+<div class="veil" role="dialog" aria-modal="true" aria-label="Que souhaitez-vous commander ?">
+<div class="modal">
+<button class="x" aria-label="Fermer" onClick="{{closeOrder}}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"></path></svg></button>
+<span class="eye c-ord">Commander</span>
+<h2 style="font-size: 40px; margin: 16px 0 30px">Que souhaitez-vous commander ?</h2>
+<div class="g2" style="gap: 18px">
+<div>
+<a class="choice gate-f" href="{{waFarmasi}}"><strong class="serif" style="font-size: 30px">Produits Farmasi</strong><span class="dim">Parfums, soins, maquillage, bien-être</span><span class="gate-go">Commander sur WhatsApp <span aria-hidden="true">→</span></span></a>
+<div style="padding-top: 16px"><span class="brandtag c-ord">FarmasiSN</span><a class="btn btn-noir btn-full" href="FarmasiSN.dc.html">Commander</a></div>
+</div>
+<div>
+<a class="choice gate-s" href="{{waSen}}" style="text-align: left"><strong class="serif" style="font-size: 30px">Plantes tropicales</strong><span class="dim">Huiles, feuilles, herbes, racines</span><span class="gate-go">Commander sur WhatsApp <span aria-hidden="true">→</span></span></a>
+<div style="padding-top: 16px"><span class="brandtag c-em">SenFarmasi</span><a class="btn btn-em btn-full" href="SenFarmasi.dc.html">Commander</a></div>
+</div>
+</div>
+</div>
+</div>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"animations":{"editor":"boolean","default":true},"$preview":{"width":1440,"height":7900}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { film: 0, paused: false, order: false, nav: false, bot: false, q: -1 };
+  }
+  wa(text) { return "https://wa.me/221771730271?text=" + encodeURIComponent(text); }
+  renderVals() {
+    const s = this.state;
+    const films = [
+      { n: "01", title: "Farmasi Masculine", brand: "FarmasiSN" },
+      { n: "02", title: "Spiruline Nutriplus", brand: "FarmasiSN" },
+      { n: "03", title: "Huiles tropicales", brand: "SenFarmasi" }
+    ];
+    const qa = [
+      { q: "Comment commander ?", a: "Choisissez votre univers puis cliquez sur « Commander ». Vous pouvez payer en ligne (Wave, Orange Money, carte), régler à la livraison, ou poursuivre sur WhatsApp au +221 77 173 02 71." },
+      { q: "Quelle plante pour ma santé ?", a: "Je ne donne pas de conseil médical. Nos fiches présentent les usages traditionnels avec prudence ; pour une question de santé, consultez un professionnel de santé." },
+      { q: "Combien gagne un distributeur ?", a: "Aucun revenu n’est garanti. Les gains dépendent de vos ventes à de vrais clients, et aucun achat de stock n’est obligatoire." }
+    ];
+    const cur = s.q >= 0 ? qa[s.q] : null;
+    return {
+      motionCls: (this.props.animations ?? true) ? "" : "still",
+      navCls: s.nav ? "open" : "",
+      toggleNav: () => this.setState({ nav: !s.nav }),
+      f0: s.film === 0, f1: s.film === 1, f2: s.film === 2,
+      paused: s.paused, playing: !s.paused,
+      pausedCls: s.paused ? "paused" : "",
+      playLabel: s.paused ? "Lire le film" : "Mettre le film en pause",
+      togglePlay: () => this.setState({ paused: !s.paused }),
+      nextFilm: () => this.setState({ film: (s.film + 1) % 3 }),
+      tabs: films.map((f, i) => ({ ...f, on: s.film === i ? "true" : "false", cls: s.film === i ? "on" : "", pick: () => this.setState({ film: i, paused: false }) })),
+      order: s.order,
+      openOrder: () => this.setState({ order: true, nav: false }),
+      closeOrder: () => this.setState({ order: false }),
+      bot: s.bot,
+      toggleBot: () => this.setState({ bot: !s.bot }),
+      hasAnswer: !!cur,
+      botQ: cur ? cur.q : "",
+      botA: cur ? cur.a : "",
+      chips: qa.map((x, i) => ({ q: x.q, ask: () => this.setState({ q: i }) })),
+      waHello: this.wa("Bonjour, je souhaite commander."),
+      waFarmasi: this.wa("Bonjour FarmasiSN, je souhaite commander des produits Farmasi."),
+      waSen: this.wa("Bonjour SenFarmasi, je souhaite commander des plantes tropicales."),
+      waAdvisor: this.wa("Bonjour, je viens de l’assistant du site et je souhaite parler à un conseiller." + (cur ? " Ma question : " + cur.q : "")),
+      onMove: (e) => {
+        const el = e.currentTarget, r = el.getBoundingClientRect();
+        el.style.setProperty("--mx", ((e.clientX - r.left) / r.width - 0.5).toFixed(3));
+        el.style.setProperty("--my", ((e.clientY - r.top) / r.height - 0.5).toFixed(3));
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

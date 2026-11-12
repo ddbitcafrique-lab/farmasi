@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 360">
+<defs>
+<linearGradient id="a" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#5A2A0C"/><stop offset=".2" stop-color="#D98A32"/><stop offset=".45" stop-color="#9A5318"/><stop offset=".8" stop-color="#B96C22"/><stop offset="1" stop-color="#4A2209"/></linearGradient>
+<linearGradient id="k" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#17130F"/><stop offset=".3" stop-color="#4A4138"/><stop offset="1" stop-color="#0B0A09"/></linearGradient>
+<linearGradient id="p" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#D8C6A2"/><stop offset=".3" stop-color="#F5EFE3"/><stop offset="1" stop-color="#C9B68F"/></linearGradient>
+</defs>
+<rect x="104" y="10" width="32" height="56" rx="15" fill="url(#k)"/>
+<rect x="94" y="62" width="52" height="42" rx="4" fill="url(#k)"/>
+<rect x="94" y="72" width="52" height="1.5" fill="#000" opacity=".5"/><rect x="94" y="82" width="52" height="1.5" fill="#000" opacity=".5"/><rect x="94" y="92" width="52" height="1.5" fill="#000" opacity=".5"/>
+<path d="M62 150Q62 114 96 104L144 104Q178 114 178 150L178 328Q178 350 156 350L84 350Q62 350 62 328Z" fill="url(#a)"/>
+<path d="M62 150Q62 114 96 104L144 104Q178 114 178 150L178 328Q178 350 156 350L84 350Q62 350 62 328Z" fill="none" stroke="#F0C078" stroke-opacity=".4" stroke-width="1.5"/>
+<rect x="117" y="104" width="6" height="150" rx="3" fill="#FFE2B0" opacity=".35"/>
+<rect x="62" y="190" width="116" height="110" fill="url(#p)"/>
+<rect x="70" y="198" width="100" height="94" fill="none" stroke="#0E4A39" stroke-width="1.2"/>
+<path d="M120 236c-9-6-9-18 0-25 9 7 9 19 0 25z" fill="#0E4A39"/>
+<text x="120" y="258" text-anchor="middle" font-family="Georgia,serif" font-size="14" letter-spacing="2" fill="#0E4A39">HUILE</text>
+<text x="120" y="274" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="7.5" letter-spacing="2" fill="#7A4426">SENFARMASI · LOT</text>
+<path d="M74 140Q74 122 94 114L94 320Q74 320 74 300Z" fill="#FFFFFF" opacity=".14"/>
+</svg>
